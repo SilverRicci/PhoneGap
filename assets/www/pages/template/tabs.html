@@ -1,0 +1,43 @@
+<ion-side-menus>
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive">
+	<ion-nav-buttons side="left">
+        <button menu-toggle="left" ng-click="menuToggle()" class="button button-icon icon ion-navicon-round">
+        </button>
+    </ion-nav-buttons>
+	<ion-nav-buttons side="right">
+		<a href="#/search" class="button button-icon icon ion-ios-search">
+        </a>
+        <a href="#/person" class="button button-icon icon ion-ios-person">
+        </a>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-tabs class="tabs-icon-top tabs-stable">
+	<ion-tab title="首页" href="#/app/home" icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
+		<ion-nav-view name="homeContent"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="工作" href="#/app/work" icon-on="iconfont icon-iconfontgongwenbao-in" icon-off="iconfont icon-iconfontgongwenbao-out">
+		<ion-nav-view name="workContent"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="邮件" icon-on="ion-ios-email" icon-off="ion-ios-email-outline">
+		<ion-nav-view name="mailContent"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="行情" icon-on="ion-ios-pulse-strong" icon-off="ion-ios-pulse">
+		
+	</ion-tab>
+</ion-tabs>
+	</ion-side-menu-content>
+	<ion-side-menu side="left" >
+		<ion-header-bar>
+			<h1 class="title">菜单栏</h1>
+		</ion-header-bar>
+		<ion-content style="background:url('img/bg/menu_bg_01.jpg') no-repeat 0% 0%;">
+			<div class="list">
+            	<a class="item item-icon-left item-icon-right" href="#"><i class="icon ion-bag"></i><font>设置</font><i class="icon ion-ios-arrow-right"></i></a>
+            	<a class="item item-icon-left item-icon-right" href="#"><i class="icon ion-clipboard"></i><font>反馈问题</font><i class="icon ion-ios-arrow-right"></i></a>
+            	<a class="item item-icon-left item-icon-right" href="#"><i class="icon ion-android-favorite-outline"></i><font>检查更新</font><i class="icon ion-ios-arrow-right"></i></a>
+				<a class="item item-icon-left item-icon-right" href="#"><i class="icon ion-chatbubble-working"></i><font>关于我们</font><i class="icon ion-ios-arrow-right"></i></a>
+        	</div>
+		</ion-content>
+	</ion-side-menu>	
+</ion-side-menus>

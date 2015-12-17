@@ -1,0 +1,15 @@
+<ion-view title="{{title}}">
+	<ion-nav-bar class="bar-positive">
+    <ion-nav-buttons>
+    	<button ng-click="goBack()" class="button button-icon icon ion-arrow-left-c"></button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+<ion-content>
+	<div class="info_content">
+		{{notice.content}}
+	</div>
+	<div class="info_file">
+		<font>附件：</font><a class="info_file_a" ng-click="previewFile(notice.fileId)">{{notice.fileId}}</a>
+	</div>
+</ion-content>
+</ion-view>

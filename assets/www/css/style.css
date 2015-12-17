@@ -1,0 +1,92 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, Roboto, 'Droid Sans', "Lucida Grande", sans-serif;
+}
+
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  text-align: center;
+  font-weight: 300;
+}
+
+.box  {
+  height: 100%;
+}
+.box h1  {
+  color: #fff;
+}
+
+.blue {
+  background-color: #4a87ee;
+}
+.yellow {
+  background-color: #f0b840;
+}
+.pink {
+  background-color: #8a6de9;
+}
+
+.pink a {
+  right:0;
+}
+
+.btn-start {
+  top: initial;
+  bottom : 40px;
+  width: 100px;
+  margin:0 auto;
+  display:block;
+}
+
+.selected {
+  background-color: #d2dced;
+}
+.home-button{
+	background:#35c3f9;
+	width:64px;
+	height:64px;
+	display:block;
+	text-align:center;
+	border-radius:32px;
+	color:#fff;
+	line-height:58px;
+	vertical-align:middle;
+}
+.img-btn-icon{
+	width:44px;
+	height:44px;
+}
+.fade-in {
+transition: 2s linear all;
+-webkit-transition: 2s linear all;
+}
+a{
+	text-decoration:none;
+}
+.ion-message{
+	font-size:1em;
+}
+.home-side-box{
+	height:15em;
+}
+.side-box-image-list{
+	width:100%;
+	height:100%;
+}
+.home-notice-panel{
+	height:25px;
+	line-height:25px;
+}
+.home-btn-bg{
+	background:url('../img/bg/bg_01.jpg') repeat 0% 0%;
+	height:60%;
+}
+.info_file{
+	margin-top:10px;
+}
+.info_file_a{
+	background:#98659c;
+	color:#fff;
+	padding:3px;
+}

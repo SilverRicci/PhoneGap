@@ -1,0 +1,90 @@
+<ion-view title="首页">
+    <ion-content>
+            <ion-slide-box class="home-side-box" auto-play="true" on-slide-changed="slideHasChanged(index)" does-continue="true" delegate-handle="homeCarouse" slide-interval="3000" >
+                <ion-slide ng-repeat="item in cImages">
+                    <div class="box">
+                        <a href="#/common/product/{{item.id}}/name/{{item.filename}}"><img class="side-box-image-list" ng-src="{{item.src}}" /></a>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+			<div class="home-notice-panel">
+			    <i class="iconfont" style="font-size:16px;float:left;">&#xe60b;</i>
+				<ion-scroll direction="y" delegate-handle="noticeScoll" scrollbar-y="false"  style="float:left;height:25px;">
+					<ul >
+						<a href="#/common/info_detail/{{notice.title}}/id/{{notice.id}}" ng-repeat="notice in notices"><li><font>{{notice.title}}</li></a>
+					</ul>
+				</ion-scroll>
+			</div>
+			<!--<div class="row">
+				<div class="col">.col</div>
+			</div>
+			<div class="row">
+				<div class="col">.col</div>
+			</div>
+			<div class="row">
+				<div class="col">.col</div>
+			</div>-->
+		<center style="background:url('img/bg/bg_01.jpg') repeat 0% 0%;height:100%;">
+		<div class="row">
+    		<div class="col">
+    			<a class="home-button" >
+    				<i class="iconfont">&#xe608;</i>
+    			</a>
+				<font>任务</font>
+			</div>
+			<div class="col">
+    			<a class="home-button">
+    				<i class="iconfont">&#xe603;</i>
+    			</a>
+				<font>资讯</font>
+			</div>
+			<div class="col">
+    			<a class="home-button" style="line-height:52px;">
+    				<i class="iconfont">&#xe601;</i>
+    			</a>
+				<font>业务</font>
+			</div>
+		</div>
+				<div class="row">
+    		<div class="col">
+    			<a class="home-button" >
+    				<i class="iconfont" style="font-size:32px;">&#xe60a;</i>
+    			</a>
+				<font>客户</font>
+			</div>
+			<div class="col">
+    			<a class="home-button" style="line-height:54px;">
+    				<i class="iconfont">&#xe607;</i>
+    			</a>
+				<font>日程</font>
+			</div>
+			<div class="col">
+    			<a class="home-button" style="line-height:62px;">
+    				<i class="iconfont">&#xe610;</i>
+    			</a>
+				<font>财务</font>
+			</div>
+		</div>
+				<div class="row">
+    		<div class="col">
+    			<a class="home-button" >
+    				<i class="iconfont">&#xe605;</i>
+    			</a>
+				<font>统计</font>
+			</div>
+			<div class="col">
+    			<a class="home-button" style="line-height:62px;">
+    				<i class="iconfont">&#xe60e;</i>
+    			</a>
+				<font>考核</font>
+			</div>
+			<div class="col">
+    			<a class="home-button">
+    				<i class="iconfont">&#xe606;</i>
+    			</a>
+				<font>会议</font>
+			</div>
+		</div>
+		</center>
+    </ion-content>
+</ion-view>
